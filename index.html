@@ -9,11 +9,13 @@
 <body>
     <header>
         <h1>TechDay 2026</h1>
+        <nav>
         <ul>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#cronograma">Cronograma</a></li>
             <li><a href="#inscricao">Inscrição</a></li>
         </ul>
+        </nav>
     </header>
     <main>
         <section id="sobre">
@@ -26,31 +28,32 @@
         <section id="cronograma">
             <h2>Programação</h2>
             <ol>
-                <li>08:00 às 09:00 - Credenciamento</li>
-                <li>09:00 às 09:15 - Abertura Oficial</li>
-                <li>09:15 às 10:15 - Palestra Principal</li>
-                <li>10:15 às 10:35 - Sessão de Perguntas e Respostas</li>
-                <li>10:35 às 10:45 - Encerramento, agradecimentos</li>
+                <li>08:00 - Credenciamento</li>
+                <li>09:00 - Keynote de Abertura</li>
+                <li>10:00 - Apresentação de IA</li>
+                <li>12:00 - Workshop Robotica</li>
             </ol>
         </section>
         <section id="inscricao">
             <h2>Garanta sua Vaga</h2>
-            <form action=>
-                <div class="form-grid"> 
-                    <label for="name">Nome Completo:</label>
-                    <input type="text" id="nome" required>
-                </div>
+            <form id="form-inscricao">
                 <div class="form-grid">
-                    <label for="email">E-mail Profissional:</label>
-                    <input type="email" id="email" placeholder="voce@exemplo.com" >
-                </div>
-                <div class="form-grid">
-                    <label for="tel">Telefone / WhatsApp:</label>
-                    <input type="tel" id="tel" placeholder="DDD + número">
-                </div>
-                <div class="form-grid">
-                    <label for="date">Data de Nascimento:</label>
-                    <input type="date" id="date">
+                    <div>
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div>
+                        <label for="email">E-mail Profissional</label>
+                        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                    </div>
+                    <div>
+                        <label for="telefone">Telefone / WhatsApp</label>
+                        <input type="tel" id="telefone" name="telefone">
+                    </div>
+                    <div>
+                        <label for="nascimento">Data de Nascimento</label>
+                        <input type="date" id="nascimento" name="nascimento">
+                    </div>
                 </div>
                 <button type="submit">Finalizar Inscrição</button>
             </form>
@@ -60,5 +63,6 @@
         <p>© 2026 SENAI Londrina - R. Belém, 844 - Centro, Londrina - PR, 86026-040
         </p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
